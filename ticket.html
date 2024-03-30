@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ticket</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/2.0.2/sha.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="icon" type="image/x-icon" href="img/logo1.jpg" />
+
+    <style>
+        body {
+            font: 14px sans-serif;
+            background-image: url("https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-size: auto;
+           img.lessBright {
+  -webkit-filter: brightness(0.8);
+  filter: brightness(0.8);
+}
+     .wrapper {
+            width: 500px;
+            padding: 60px;
+            margin-top: 40px;
+            text-decoration: bold;
+            color: white;
+            background-color: orange;
+            text-decoration: bold;
+        }
+    }
+    </style>
+</head>
+
+<body>
+
+    <!-- FRONTEND -->
+    
+<div class="wrapper mx-auto">
+    <p> Complete all informations to Buy Ticket </p>
+    <form  aaction="mailto:princebergborja@gmail.com" method="post" enctype="text/plain">
+        <div class="form-group">
+            <label for="Name"><i class="fas fa-account_circle"></i> NAME & FIRSTNAME </label>
+            <input type="text"  name="Name" id="Name" class="form-control" autocomplete="off" required>
+            <span class="invalid-feedback"></span>
+        </div>
+        <div class="form-group">
+            <label for="pays" >COUNTRY</label>
+            <select id="pays" name="pays" class="form-control" required>
+                <option value="Russia"> RUSSIA </option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="City"><i class="fas fa-account_circle"></i> CITY </label>
+            <input type="text" name="City" id="City" class="form-control" autocomplete="off" required>
+            <span class="invalid-feedback"></span>
+        </div>
+        <div class="form-group">
+            <label for="phone"><i class="fas fa-account_circle"></i> Telephone </label>
+            <input type="telephone" name="Phone" id="Phone" class="form-control" autocomplete="off" required>
+            <span class="invalid-feedback"></span>
+        </div>
+        <div class="form-group">
+            <label for="Ticket">Ticket</label>
+            <select id="Ticket" name="Ticket" class="form-control" required>
+                <option value="Basic">  BASIC/ 3000 RUB </option>
+                <option value="Vip"> VIP/ 5000 RUB</option>
+                <option value="VVIP"> VVIP/ 10000 RUB</option>
+            </select>
+        </div>
+       <div class="form-group">
+        <h6> Transaction numbers </h6>
+        <textarea readonly class="form-control">
++7 953 618-69-31
++7 996 450-36-94
++7 996 588-44-90
+    </textarea>
+       </div>
+    <div class="form-group">
+            <label>Upload a payement pdf file </label>
+            <input type="file" id="file" name="file" class="form-control" autocomplete="off" required>
+            <span class="invalid-feedback"></span>
+        </div> 
+        <div class="form-group">
+            <input type="submit" id="submit" name="submit" class="btn btn-dark" value="Buy">
+        </div>
+    </form>
+    <!-- BACKEND -->
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+</body>
+
+</html>
